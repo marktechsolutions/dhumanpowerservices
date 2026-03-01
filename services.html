@@ -14,8 +14,20 @@
 
 <!-- Navbar -->
 <nav class="bg-[#003366] text-white fixed w-full z-50 shadow">
-  <div class="container mx-auto flex justify-between items-center p-4">
+  <div class="container mx-auto flex justify-between  items-center p-4">
     <img src="images/home/logo.jpeg" alt="DHU Logo" class="h-10">
+    <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+
+<div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-[#003366] text-white">
+      <a href="index.html" class="block px-4 py-2 hover:text-[#D4AF37]">Home</a>
+      <a href="about.html" class="block px-4 py-2 hover:text-[#D4AF37]">About</a>
+      <a href="services.html" class="block px-4 py-2 hover:text-[#D4AF37]">Services</a>
+      <a href="contact.html" class="block px-4 py-2 hover:text-[#D4AF37]">Contact</a>
+    </div>
     <div class="space-x-6 hidden md:block">
       <a href="index.html" class="hover:text-[#D4AF37]">Home</a>
       <a href="about.html" class="hover:text-[#D4AF37]">About</a>
@@ -495,5 +507,6 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
 
 
