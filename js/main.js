@@ -26,8 +26,18 @@ function closeModal() {
     document.body.style.overflow = 'auto';
 }
 
+const btn = document.getElementById("mobile-menu-button");
+const menu = document.getElementById("mobile-menu");
+if (btn && menu) {
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+}
+
+
 // PWA Service Worker
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("js/service-worker.js")
     .then(() => console.log("Service Worker Registered"));
+
 }
